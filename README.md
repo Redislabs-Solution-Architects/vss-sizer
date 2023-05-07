@@ -35,7 +35,8 @@ pip install -r requirements.txt
 - --vecm.  HNSW M Param.  Default = 16.
 ### Execution
 ```bash
-python3 vss-sizer.py --nkeys 500000 --indextype hnsw --metrictype cosine --floattype f32 --vecdim 1536 --vecm 16
+python3 vss-sizer.py --nkeys 100000 --objecttype hash --indextype flat --metrictype cosine 
+--floattype f32 --vecdim 1536
 ```
 ### Output
 Sample output for the test above.
@@ -43,15 +44,17 @@ Sample output for the test above.
 Vector Index Test
  
 *** Parameters ***
-nkeys:500000
-indextype:hnsw
-metrictype:cosine
-floattype:float32
-vecdim:1536
-vecm:16
+nkeys: 100000
+objecttype: hash
+indextype: flat
+metrictype: cosine
+floattype: float32
+vecdim: 1536
  
 *** Results ***
-index ram used:3173.09 MB
-data ram used:21708.8 MB
-index to data ratio:14.62%
+index ram used: 606.98 MB
+data ram used: 812.24 MB
+index to data ratio: 74.73%
+document size: 7416 B
+execution time: 4.37 sec
 ```
