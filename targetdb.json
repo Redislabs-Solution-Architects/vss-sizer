@@ -12,12 +12,10 @@
     "authentication_redis_pass": "redis",
     "module_list": [{
         "module_name":"ReJSON",
-        "module_args": "",
-        "semantic_version": "2.4.6"
+        "module_args": ""
     },
     {
         "module_name": "search",
-        "module_args": "",
-        "semantic_version": "2.6.9"
+        "module_args": ""
     }]
 }
